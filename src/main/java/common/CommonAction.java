@@ -24,9 +24,4 @@ public class CommonAction {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT));
         return driver;
     }
-
-    public void waitForPageLoadComplete(Duration timeToWait, WebDriver driver) {
-        new WebDriverWait(driver, timeToWait).until(webDriver -> ((JavascriptExecutor) webDriver)
-                .executeScript("return document.readyState").equals("complete"));
-    }
 }
