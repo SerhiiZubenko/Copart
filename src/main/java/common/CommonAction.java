@@ -2,6 +2,7 @@ package common;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.util.TimeUtils;
 
@@ -13,20 +14,11 @@ import static constants.Constants.TimeVariables.IMPLICIT_WAIT;
 
 public class CommonAction {
 
-    public WebDriver createDriver(){
-        WebDriver driver = null;
+    public static WebDriver createDriver(){
+        WebDriver driver = new ChromeDriver();
 
-        switch (PLATFORM_AND_BROWSER){
-            case "win_chrome":
-               System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT));
         return driver;
-    }
-
-    public void waitForPageLoadComplete(Duration timeToWait, WebDriver driver) {
-        new WebDriverWait(driver, timeToWait).until(webDriver -> ((JavascriptExecutor) webDriver)
-                .executeScript("return document.readyState").equals("complete"));
     }
 }
