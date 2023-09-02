@@ -23,7 +23,7 @@ public class BasePage {
                 .executeScript("return document.readyState").equals("complete"));
     }
 
-    public WebElement waitElementIsVivible(WebElement element){
+    public WebElement waitElementIsVisible(WebElement element){
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.visibilityOf(element));
         return element;
     }

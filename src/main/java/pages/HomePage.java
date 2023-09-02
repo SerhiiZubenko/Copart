@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage{
 
-    private static By inputSearch = By.id("input-search");
+    private static By inputSearch = By.xpath("//input[@id = 'input-search']");
+    private static By searchBtn = By.xpath("//button[@data-uname = 'homepageHeadersearchsubmit']");
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -15,5 +16,10 @@ public class HomePage extends BasePage{
     public void inputSearchField(String model){
         WebElement inputSearchField = driver.findElement(inputSearch);
         inputSearchField.sendKeys(model);
+    }
+
+    public void clickOnTheSearchButton(){
+        WebElement searchButton = driver.findElement(searchBtn);
+        searchButton.click();
     }
 }
