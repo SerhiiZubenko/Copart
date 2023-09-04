@@ -1,0 +1,13 @@
+#----------------------------------------
+#Created by Serhii Zubenko 2023
+#----------------------------------------
+
+name: GitHub_Action_Copart
+
+on: 
+  push:
+      branches:
+      - master
+
+
+
