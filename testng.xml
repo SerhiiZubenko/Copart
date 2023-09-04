@@ -1,0 +1,8 @@
+<suite name = "Smoke">
+    <test name = "Test Copart">
+        <classes>
+            <class name = "HomeTests">
+            </class>
+        </classes>
+    </test>
+</suite>
