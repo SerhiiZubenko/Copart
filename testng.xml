@@ -1,5 +1,5 @@
 <suite name = "Smoke">
-    <test name = "Test Copart">
+    <test name = "test">
         <classes>
             <class name = "HomeTests">
             </class>

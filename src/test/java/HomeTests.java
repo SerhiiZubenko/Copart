@@ -24,6 +24,7 @@ public class HomeTests extends BaseTest{
             Assert.assertTrue(element.getText().contains(SEARCH_OF_MODELS));
         }
     }
+
     @Test(priority = 2)
     public void checkSearchByModel2 (){
         homePage.inputSearchField(SEARCH_OF_MODEL);

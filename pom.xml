@@ -5,10 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Copart_Demo_Selenoid</artifactId>
+    <artifactId>Copart_Demo_Selenium</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <aspectj.version>1.8.10</aspectj.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -55,6 +56,7 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>2.24.0</version>
+            <scope>test</scope>
         </dependency>
 
 
