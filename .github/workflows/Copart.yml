@@ -9,5 +9,12 @@ on:
       branches:
       - master
 
+jobs: 
+  smoke_tests: 
+    runs-on: ubintu-latest
+
+    steps:
+    - name: print  a Hello message
+    - run: echo "Hello Serhii"
 
 
