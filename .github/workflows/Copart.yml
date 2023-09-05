@@ -11,7 +11,7 @@ on:
 
 jobs: 
   smoke_tests: 
-    runs-on: ubintu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: print  a Hello message
