@@ -15,6 +15,6 @@ jobs:
 
     steps:
     - name: print  a Hello message
-    - run: echo "Hello Serhii"
+      run: echo "Hello Serhii"
 
 
