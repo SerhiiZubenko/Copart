@@ -17,7 +17,7 @@ jobs:
     - name: print  a Hello message
       run:  echo "Hello Serhii"
     - name: clone Git repository
-      uses: action/checkout@v1
+      uses: actions/checkout@v1
     
 
 
