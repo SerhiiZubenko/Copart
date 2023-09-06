@@ -14,10 +14,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: show the folder contents
+      run: ls - la
     - name: print  a Hello message
       run:  echo "Hello Serhii"
     - name: clone Git repository
       uses: actions/checkout@v1
+    - name: show the folder contents
+      run: ls - la
     
 
 
