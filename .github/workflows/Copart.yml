@@ -17,7 +17,8 @@ jobs:
     - name: print  a Hello message
       run:  echo "Hello Serhii"
     - name: clone Git repository
-      run:  actions/checkout@v1
+      run:  gh repo clone SerhiiZubenko/Copart
+    
 
 
 
