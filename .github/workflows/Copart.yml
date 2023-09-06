@@ -15,9 +15,9 @@ jobs:
 
     steps:
     - name: print  a Hello message
-      run: echo "Hello Serhii"
+      run:  echo "Hello Serhii"
     - name: clone Git repository
-      run: git clone my repo
+      run:  actions/checkout@v1
 
 
 
