@@ -24,7 +24,8 @@ jobs:
       run: ls -la
     - name: check the Java version
       run: java --version
-    
+    - name: run smoke tests
+      run: mvn clean test
 
 
 
